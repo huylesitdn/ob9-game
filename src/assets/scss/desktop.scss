@@ -1,0 +1,206 @@
+.main {
+  background-image: url(/assets/images/spin/BGminigame-01.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.5s;
+  }
+
+  &.has-cloud {
+    &::before {
+      height: 100%;
+      background-image: url(/assets/images/spin/clould-cut.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: bottom;
+      background-attachment: fixed;
+    }
+  }
+
+  .item {
+    &>div {
+      display: flex;
+      place-items: flex-end;
+    }
+
+    &.tnc,
+    &.prize {
+      .content {
+        background-image: url(/assets/images/prize/BG-opacity-cut.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        border: 2px solid #fee3b8;
+        margin-bottom: 20px;
+        padding: 100px 30px 50px;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        gap: 30px;
+        position: relative;
+        max-height: 650px;
+
+        &__header {
+          font-size: 30px;
+          color: #fee3b8;
+          text-align: center;
+        }
+
+        &__prize {
+          overflow: auto;
+          color: #fee3b8;
+          text-align: left;
+
+          &__subtitle {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+
+          &__description {
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+        }
+
+        &__text {
+          color: #fee3b8;
+        }
+
+        &__title {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -70px;
+          text-align: center;
+
+          img {
+            max-width: 300px;
+          }
+        }
+
+        &__prize-items {
+          display: flex;
+          place-content: center;
+          place-items: center;
+          gap: 30px;
+
+          &__item {
+            min-width: 180px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+
+
+            img {
+              max-width: 150px;
+              max-height: 150px;
+            }
+
+            &.iphone {
+              img {
+                max-width: 250px;
+                margin-top: -50px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.spins {
+      .content {
+        display: flex;
+        place-content: flex-end;
+        place-items: center;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 70px;
+        position: relative;
+
+        &__spin-btn {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 70px;
+          right: 0;
+          display: flex;
+          place-items: center;
+          place-content: center;
+
+          .btn {
+            background-image: url(/assets/images/spin/Button-spin.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            font-size: 26px;
+            color: #fee3b8;
+            font-weight: bold;
+            font-family: monospace;
+            line-height: 28px;
+
+            &:hover {
+              opacity: 0.7;
+            }
+
+            &:focus {
+              box-shadow: none !important;
+            }
+          }
+        }
+
+        &__spin-items {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          gap: 15px;
+
+          &__item {
+            background-color: #fee3b8;
+            border-radius: 15px;
+            border-bottom: 7px solid #e5b268;
+            min-width: 180px;
+            min-height: 150px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+
+            &.empty {
+              background: transparent;
+              border-bottom: none;
+              z-index: -1;
+            }
+
+            img {
+              max-width: 120px;
+              max-height: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .spins,
+  .prize {
+    // background-image: url(/assets/images/spin/clould.png);
+    // background-repeat: no-repeat;
+    // background-size: 100% auto;
+    // background-position: bottom;
+    // background-attachment: fixed;
+  }
+}

@@ -1,4 +1,27 @@
 {
+  "prize_title": "<img src=\"/assets/images/prize/TITLE-W.png\" alt=\"\" />",
+  "tnc_title": "<img src=\"/assets/images/prize/TITLE-W-TnC.png\" alt=\"\" />",
+  "tnc": {
+    "header": "MERRY CHRISTMAS MINI GAMES T&amp;C",
+    "text": "All OB members are entitled to participate and play in this Mini Game. Promotion period starts from 21st Dec 2022 12:00:00 (GMT+8) until 2nd Jan 2023 23:59:59 (GMT+8).",
+    "title1": "How to Claim",
+    "text1": "To redeem the mini game ticket, members are required to make a single minimum deposit of MYR100 to get 1 ticket.",
+    "title2": "Rules",
+    "text21": "In order to claim these Mini Games tickets, the deposit amount must be a single minimum of MYR100 or above. Members are allowed to obtain a maximum of five (5) Mini Game Tickets per day.",
+    "text22": "Once you have redeemed the Mini games tickets, you can click spin and claim the Cash Prizes. All prizes will be credited to the players account automatically within 60 seconds.",
+    "text23": "You are required to meet x1 turnover before withdrawal can be made. (Total turnover 1 times of the bonus)",
+    "text231": "Example:",
+    "text232": "Mini Game Bonus: MYR999",
+    "text233": "Required Bet Amount = MYR999 x 1 = MYR999",
+    "text24": "The Mini Game ticket is only available from 21st Dec 2022 12:00:00 (GMT+8) until 2nd Jan 2023 23:59:59 (GMT+8) and will expire on 3rd Jan 2023 00:00:00 (GMT+8)",
+    "text25": "Members must use all tickets before the expiration date",
+    "text26": "This promotion cannot be used in conjunction with other OB promotions.",
+    "text27": "OB reserves the right to modify, cancel, suspend or terminate the promotion and/or change the terms of the said promotion at any time without prior notice.",
+    "text28": "Participating members must accept and comply with all the terms mentioned above as well as all relevant rules and regulations stated on the OB website.",
+    "text29": "General OB Terms & Conditions apply.",
+    "": "",
+    "": ""
+  },
   "": "",
   "": "",
   "": ""

@@ -1,0 +1,136 @@
+.main {
+  background-image: url(/assets/images/spin/BGminigame-01.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative; }
+  .main::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.5s; }
+  .main.has-cloud::before {
+    height: 100%;
+    background-image: url(/assets/images/spin/clould-cut.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+    background-attachment: fixed; }
+  .main .item > div {
+    display: flex;
+    place-items: flex-end; }
+  .main .item.tnc .content, .main .item.prize .content {
+    background-image: url(/assets/images/prize/BG-opacity-cut.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    border: 2px solid #fee3b8;
+    margin-bottom: 20px;
+    padding: 100px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 30px;
+    position: relative;
+    max-height: 650px; }
+    .main .item.tnc .content__header, .main .item.prize .content__header {
+      font-size: 30px;
+      color: #fee3b8;
+      text-align: center; }
+    .main .item.tnc .content__prize, .main .item.prize .content__prize {
+      overflow: auto;
+      color: #fee3b8;
+      text-align: left; }
+      .main .item.tnc .content__prize__subtitle, .main .item.prize .content__prize__subtitle {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 15px; }
+      .main .item.tnc .content__prize__description, .main .item.prize .content__prize__description {
+        font-size: 14px;
+        margin-bottom: 15px; }
+    .main .item.tnc .content__text, .main .item.prize .content__text {
+      color: #fee3b8; }
+    .main .item.tnc .content__title, .main .item.prize .content__title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -70px;
+      text-align: center; }
+      .main .item.tnc .content__title img, .main .item.prize .content__title img {
+        max-width: 300px; }
+    .main .item.tnc .content__prize-items, .main .item.prize .content__prize-items {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      gap: 30px; }
+      .main .item.tnc .content__prize-items__item, .main .item.prize .content__prize-items__item {
+        min-width: 180px;
+        display: flex;
+        place-content: center;
+        place-items: center; }
+        .main .item.tnc .content__prize-items__item img, .main .item.prize .content__prize-items__item img {
+          max-width: 150px;
+          max-height: 150px; }
+        .main .item.tnc .content__prize-items__item.iphone img, .main .item.prize .content__prize-items__item.iphone img {
+          max-width: 250px;
+          margin-top: -50px; }
+  .main .item.spins .content {
+    display: flex;
+    place-content: flex-end;
+    place-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 70px;
+    position: relative; }
+    .main .item.spins .content__spin-btn {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 70px;
+      right: 0;
+      display: flex;
+      place-items: center;
+      place-content: center; }
+      .main .item.spins .content__spin-btn .btn {
+        background-image: url(/assets/images/spin/Button-spin.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 200px;
+        height: 200px;
+        font-size: 26px;
+        color: #fee3b8;
+        font-weight: bold;
+        font-family: monospace;
+        line-height: 28px; }
+        .main .item.spins .content__spin-btn .btn:hover {
+          opacity: 0.7; }
+        .main .item.spins .content__spin-btn .btn:focus {
+          box-shadow: none !important; }
+    .main .item.spins .content__spin-items {
+      display: flex;
+      place-content: space-between;
+      place-items: center;
+      gap: 15px; }
+      .main .item.spins .content__spin-items__item {
+        background-color: #fee3b8;
+        border-radius: 15px;
+        border-bottom: 7px solid #e5b268;
+        min-width: 180px;
+        min-height: 150px;
+        display: flex;
+        place-content: center;
+        place-items: center; }
+        .main .item.spins .content__spin-items__item.empty {
+          background: transparent;
+          border-bottom: none;
+          z-index: -1; }
+        .main .item.spins .content__spin-items__item img {
+          max-width: 120px;
+          max-height: 120px; }
