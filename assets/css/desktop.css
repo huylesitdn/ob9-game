@@ -4,7 +4,8 @@
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  min-width: 768px; }
   .main::before {
     content: '';
     position: absolute;
@@ -36,7 +37,7 @@
     flex-direction: column;
     place-content: center;
     place-items: center;
-    gap: 30px;
+    gap: 20px;
     position: relative;
     max-height: 650px; }
     .main .item.tnc .content__header, .main .item.prize .content__header {
@@ -68,7 +69,7 @@
       display: flex;
       place-content: center;
       place-items: center;
-      gap: 30px; }
+      gap: 70px; }
       .main .item.tnc .content__prize-items__item, .main .item.prize .content__prize-items__item {
         min-width: 180px;
         display: flex;
