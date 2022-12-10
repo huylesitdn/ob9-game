@@ -6,21 +6,10 @@
   background-size: cover;
   position: relative;
   min-width: 768px; }
-  .main::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    transition: all 0.5s; }
-  .main.has-cloud::before {
-    height: 100%;
-    background-image: url(/assets/images/spin/clould-cut.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: bottom;
-    background-attachment: fixed; }
+  .main .my-navbar .nav-item.dropdown .nav-link.dropdown-toggle {
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase; }
   .main .item > div {
     display: flex;
     place-items: flex-end; }
@@ -44,17 +33,6 @@
       font-size: 30px;
       color: #fee3b8;
       text-align: center; }
-    .main .item.tnc .content__prize, .main .item.prize .content__prize {
-      overflow: auto;
-      color: #fee3b8;
-      text-align: left; }
-      .main .item.tnc .content__prize__subtitle, .main .item.prize .content__prize__subtitle {
-        font-weight: bold;
-        font-size: 16px;
-        margin-bottom: 15px; }
-      .main .item.tnc .content__prize__description, .main .item.prize .content__prize__description {
-        font-size: 14px;
-        margin-bottom: 15px; }
     .main .item.tnc .content__text, .main .item.prize .content__text {
       color: #fee3b8; }
     .main .item.tnc .content__title, .main .item.prize .content__title {
@@ -81,57 +59,117 @@
         .main .item.tnc .content__prize-items__item.iphone img, .main .item.prize .content__prize-items__item.iphone img {
           max-width: 250px;
           margin-top: -50px; }
-  .main .item.spins .content {
-    display: flex;
-    place-content: flex-end;
-    place-items: center;
-    flex-direction: column;
-    gap: 15px;
-    padding-bottom: 70px;
-    position: relative; }
-    .main .item.spins .content__spin-btn {
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 70px;
-      right: 0;
-      display: flex;
-      place-items: center;
-      place-content: center; }
-      .main .item.spins .content__spin-btn .btn {
-        background-image: url(/assets/images/spin/Button-spin.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 200px;
-        height: 200px;
-        font-size: 26px;
-        color: #fee3b8;
+  .main .item.tnc .content {
+    padding-bottom: 20px; }
+    .main .item.tnc .content__tnc {
+      overflow: auto;
+      color: #fee3b8;
+      text-align: left; }
+      .main .item.tnc .content__tnc::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5; }
+      .main .item.tnc .content__tnc::-webkit-scrollbar {
+        width: 6px;
+        background-color: transparent; }
+      .main .item.tnc .content__tnc::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #D62929; }
+      .main .item.tnc .content__tnc__subtitle {
         font-weight: bold;
-        font-family: monospace;
-        line-height: 28px; }
-        .main .item.spins .content__spin-btn .btn:hover {
-          opacity: 0.7; }
-        .main .item.spins .content__spin-btn .btn:focus {
-          box-shadow: none !important; }
-    .main .item.spins .content__spin-items {
+        font-size: 16px;
+        margin-bottom: 15px; }
+      .main .item.tnc .content__tnc__description {
+        font-size: 14px;
+        margin-bottom: 15px; }
+  .main .item.spins::before, .main .item.spins::after, .main .item.prize::before, .main .item.prize::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 50%;
+    height: 300px;
+    transition: all 0.5s;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: bottom left;
+    background-attachment: fixed;
+    transition: all 1s; }
+    @media only screen and (max-width: 1400px) {
+      .main .item.spins::before, .main .item.spins::after, .main .item.prize::before, .main .item.prize::after {
+        max-width: 40%;
+        height: 250px;
+        background-size: contain; } }
+    @media only screen and (max-width: 1023px) {
+      .main .item.spins::before, .main .item.spins::after, .main .item.prize::before, .main .item.prize::after {
+        max-width: 40%;
+        height: 200px; } }
+  .main .item.spins::before, .main .item.prize::before {
+    background-image: url(/assets/images/spin/clould-cut-1.png);
+    left: -100%;
+    z-index: 3; }
+  .main .item.spins::after, .main .item.prize::after {
+    background-image: url(/assets/images/spin/clould-cut-2.png);
+    background-position: bottom right;
+    right: -100%; }
+  .main .item.spins.active::before, .main .item.prize.active::before {
+    left: 0; }
+  .main .item.spins.active::after, .main .item.prize.active::after {
+    right: 0; }
+  .main .item.spins {
+    position: relative; }
+    .main .item.spins .content {
       display: flex;
-      place-content: space-between;
+      place-content: flex-end;
       place-items: center;
-      gap: 15px; }
-      .main .item.spins .content__spin-items__item {
-        background-color: #fee3b8;
-        border-radius: 15px;
-        border-bottom: 7px solid #e5b268;
-        min-width: 180px;
-        min-height: 150px;
+      flex-direction: column;
+      gap: 15px;
+      padding-bottom: 70px;
+      position: relative; }
+      .main .item.spins .content__spin-btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 70px;
+        right: 0;
         display: flex;
-        place-content: center;
-        place-items: center; }
-        .main .item.spins .content__spin-items__item.empty {
-          background: transparent;
-          border-bottom: none;
-          z-index: -1; }
-        .main .item.spins .content__spin-items__item img {
-          max-width: 120px;
-          max-height: 120px; }
+        place-items: center;
+        place-content: center; }
+        .main .item.spins .content__spin-btn .btn {
+          background-image: url(/assets/images/spin/Button-spin.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 200px;
+          height: 200px;
+          font-size: 26px;
+          color: #fee3b8;
+          font-weight: bold;
+          font-family: monospace;
+          line-height: 28px; }
+          .main .item.spins .content__spin-btn .btn:hover {
+            opacity: 0.7; }
+          .main .item.spins .content__spin-btn .btn:focus {
+            box-shadow: none !important; }
+      .main .item.spins .content__spin-items {
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        gap: 15px; }
+        .main .item.spins .content__spin-items__item {
+          background-color: #fee3b8;
+          border-radius: 15px;
+          border-bottom: 7px solid #e5b268;
+          min-width: 180px;
+          min-height: 150px;
+          display: flex;
+          place-content: center;
+          place-items: center; }
+          .main .item.spins .content__spin-items__item.empty {
+            background: transparent;
+            border-bottom: none;
+            z-index: -1; }
+          .main .item.spins .content__spin-items__item img {
+            max-width: 120px;
+            max-height: 120px; }

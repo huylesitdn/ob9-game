@@ -6,25 +6,18 @@
   background-size: cover;
   position: relative;
   min-width: 768px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    transition: all 0.5s;
-  }
-
-  &.has-cloud {
-    &::before {
-      height: 100%;
-      background-image: url(/assets/images/spin/clould-cut.png);
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      background-position: bottom;
-      background-attachment: fixed;
+  .my-navbar {
+    .nav-item {
+      &.dropdown {
+        .nav-link {
+          &.dropdown-toggle {
+            // color: #fee3b8;
+            color: #fff;
+            text-align: right;
+            text-transform: uppercase;
+          }
+        }
+      }
     }
   }
 
@@ -57,23 +50,6 @@
           font-size: 30px;
           color: #fee3b8;
           text-align: center;
-        }
-
-        &__prize {
-          overflow: auto;
-          color: #fee3b8;
-          text-align: left;
-
-          &__subtitle {
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 15px;
-          }
-
-          &__description {
-            font-size: 14px;
-            margin-bottom: 15px;
-          }
         }
 
         &__text {
@@ -121,7 +97,102 @@
       }
     }
 
+    &.tnc {
+      .content {
+        padding-bottom: 20px;
+        &__tnc {
+          overflow: auto;
+          color: #fee3b8;
+          text-align: left;
+
+          &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #F5F5F5;
+          }
+
+          &::-webkit-scrollbar {
+            width: 6px;
+            background-color: transparent;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            background-color: #D62929;
+          }
+
+          &__subtitle {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+
+          &__description {
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    &.spins,
+    &.prize {
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-width: 50%;
+        height: 300px;
+        transition: all 0.5s;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: bottom left;
+        background-attachment: fixed;
+        transition: all 1s;
+
+        @media only screen and (max-width: 1400px) {
+          max-width: 40%;
+          height: 250px;
+          background-size: contain;
+        }
+
+        @media only screen and (max-width: 1023px) {
+          max-width: 40%;
+          height: 200px;
+        }
+
+      }
+
+      &::before {
+        background-image: url(/assets/images/spin/clould-cut-1.png);
+        left: -100%;
+        z-index: 3;
+      }
+
+      &::after {
+        background-image: url(/assets/images/spin/clould-cut-2.png);
+        background-position: bottom right;
+        right: -100%;
+      }
+
+      &.active {
+        &::before {
+          left: 0;
+        }
+
+        &::after {
+          right: 0;
+        }
+      }
+    }
+
     &.spins {
+      position: relative;
+
       .content {
         display: flex;
         place-content: flex-end;
@@ -194,14 +265,5 @@
         }
       }
     }
-  }
-
-  .spins,
-  .prize {
-    // background-image: url(/assets/images/spin/clould.png);
-    // background-repeat: no-repeat;
-    // background-size: 100% auto;
-    // background-position: bottom;
-    // background-attachment: fixed;
   }
 }

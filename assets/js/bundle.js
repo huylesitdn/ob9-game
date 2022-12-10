@@ -1,4 +1,3 @@
-
 // Translator
 
 const LANGUAGES = {
@@ -18,10 +17,12 @@ var translator = new Translator({
   // filesLocation: "https://raw.githubusercontent.com/huylesitdn/12goal/main/assets/i18n",
 });
 
-const PREFERED_REGION = 'preferred_region';
-const _get_translator_config = translator.config.persistKey || "preferred_language";
-const _get_language = localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
-const _get_region = localStorage.getItem(PREFERED_REGION) || 'Singapore';
+const PREFERED_REGION = "preferred_region";
+const _get_translator_config =
+  translator.config.persistKey || "preferred_language";
+const _get_language =
+  localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
+const _get_region = localStorage.getItem(PREFERED_REGION) || "Singapore";
 
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
@@ -34,48 +35,56 @@ translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
  *
  */
 
-
-const selectLanguageModalElm = $("#selectLanguage");
-if (selectLanguageModalElm.length > 0) {
-  var selectLanguageModal = new bootstrap.Modal(selectLanguageModalElm, {});
-}
-$(".choose-language").on("click", function (e) {
+$(".my-navbar .currentLanguage").html(_get_language);
+$(".my-navbar .chooseLanguage").on("click", function (e) {
+  e.preventDefault();
   const select_language = $(this).data("language");
-  const select_region = $(this).data("region");
-  const accept_languages = ['Malaysia', 'Singapore']
-
-  if (!accept_languages.includes(select_region)) {
-    window.location.href = '/access-denied.html';
-    return false;
-  }
-
-
+  console.log(select_language)
   if (LANGUAGES[select_language]) {
-    translator.translatePageTo(LANGUAGES[select_language]);
-    selectLanguageModal.hide();
-    $("#mySidenav").removeClass("active");
-    localStorage.setItem(PREFERED_REGION, select_region)
-    window.location.reload();
+    const newLanguage = LANGUAGES[select_language]
+    translator.translatePageTo(newLanguage);
+    $(".my-navbar .currentLanguage").html(newLanguage);
+    // window.location.reload();
   } else {
     console.log("No language setup");
   }
 });
 
+// if (selectLanguageModalElm.length > 0) {
+//   var selectLanguageModal = new bootstrap.Modal(selectLanguageModalElm, {});
+// }
+// $(".choose-language").on("click", function (e) {
+//   const select_language = $(this).data("language");
+//   const select_region = $(this).data("region");
+//   const accept_languages = ['Malaysia', 'Singapore']
+
+//   if (!accept_languages.includes(select_region)) {
+//     window.location.href = '/access-denied.html';
+//     return false;
+//   }
+
+//   if (LANGUAGES[select_language]) {
+//     translator.translatePageTo(LANGUAGES[select_language]);
+//     selectLanguageModal.hide();
+//     $("#mySidenav").removeClass("active");
+//     localStorage.setItem(PREFERED_REGION, select_region)
+//     window.location.reload();
+//   } else {
+//     console.log("No language setup");
+//   }
+// });
 
 /**
  * MENU SLIDE
  *
  */
 
-
 /**
- * 
+ *
  * INITIAL AFTER HAVE translator
- * 
+ *
  */
 
-function initialize () {
-
-}
+function initialize() {}
 
 console.log("--- index.jsaaa");

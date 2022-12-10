@@ -25,9 +25,29 @@
 
   <body>
     <!-- Content -->
-    <section class="main has-cloud">
+    <section class="main">
+      <nav class="navbar fixed-top my-navbar">
+        <div class="container">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle currentLanguage"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item chooseLanguage" href="#" data-language="EN">EN</a></li>
+                <li><a class="dropdown-item chooseLanguage" href="#" data-language="ZH">ZH</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div id="fullPage">
-        <section class="item spins active">
+        <section class="item spins">
           <div class="container content">
             <div class="content__spin-btn">
               <button class="btn">
@@ -127,12 +147,24 @@
             <div class="content">
               <div class="content__title" data-i18n="tnc_title"></div>
               <div class="content__header" data-i18n="tnc.header"></div>
-              <div class="content__prize">
-                <div class="content__prize__description" data-i18n="tnc.text"></div>
-                <div class="content__prize__subtitle" data-i18n="tnc.title1"></div>
-                <div class="content__prize__description" data-i18n="tnc.text1"></div>
-                <div class="content__prize__subtitle" data-i18n="tnc.title2"></div>
-                <div class="content__prize__description">
+              <div class="content__tnc">
+                <div
+                  class="content__tnc__description"
+                  data-i18n="tnc.text"
+                ></div>
+                <div
+                  class="content__tnc__subtitle"
+                  data-i18n="tnc.title1"
+                ></div>
+                <div
+                  class="content__tnc__description"
+                  data-i18n="tnc.text1"
+                ></div>
+                <div
+                  class="content__tnc__subtitle"
+                  data-i18n="tnc.title2"
+                ></div>
+                <div class="content__tnc__description">
                   <ul>
                     <li data-i18n="tnc.text21"></li>
                     <li data-i18n="tnc.text22"></li>
