@@ -178,11 +178,11 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    max-width: 50%;
+    max-width: 40%;
     height: 300px;
     transition: all 0.5s;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: contain;
     background-position: bottom left;
     background-attachment: fixed;
     transition: all 1s; }
@@ -190,7 +190,6 @@
       .mobile-main .item.spins::before, .mobile-main .item.spins::after, .mobile-main .item.prize::before, .mobile-main .item.prize::after {
         max-width: 40%;
         height: 250px;
-        background-size: contain;
         background-attachment: scroll; } }
     @media only screen and (max-width: 1023px) {
       .mobile-main .item.spins::before, .mobile-main .item.spins::after, .mobile-main .item.prize::before, .mobile-main .item.prize::after {
