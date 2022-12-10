@@ -1,5 +1,5 @@
 .mobile-main {
-  background-image: url(/assets/images/spin/BGminigame-01.png);
+  background-image: url(../images/spin/BGminigame-01.png);
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
@@ -49,7 +49,7 @@
     &.tnc,
     &.prize {
       .content {
-        background-image: url(/assets/images/prize/BG-opacity-cut.png);
+        background-image: url(../images/prize/BG-opacity-cut.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -295,13 +295,13 @@
       }
 
       &::before {
-        background-image: url(/assets/images/spin/clould-cut-1.png);
+        background-image: url(../images/spin/clould-cut-1.png);
         left: -100%;
         z-index: 3;
       }
 
       &::after {
-        background-image: url(/assets/images/spin/clould-cut-2.png);
+        background-image: url(../images/spin/clould-cut-2.png);
         background-position: bottom right;
         right: -100%;
       }
@@ -356,7 +356,7 @@
           }
 
           .btn {
-            background-image: url(/assets/images/spin/Button-spin.png);
+            background-image: url(../images/spin/Button-spin.png);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;

@@ -1,5 +1,5 @@
 .main {
-  background-image: url(/assets/images/spin/BGminigame-01.png);
+  background-image: url(../images/spin/BGminigame-01.png);
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
@@ -21,7 +21,7 @@
     display: flex;
     place-items: flex-end; }
   .main .item.tnc .content, .main .item.prize .content {
-    background-image: url(/assets/images/prize/BG-opacity-cut.png);
+    background-image: url(../images/prize/BG-opacity-cut.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -113,11 +113,11 @@
         max-width: 40%;
         height: 200px; } }
   .main .item.spins::before, .main .item.prize::before {
-    background-image: url(/assets/images/spin/clould-cut-1.png);
+    background-image: url(../images/spin/clould-cut-1.png);
     left: -100%;
     z-index: 3; }
   .main .item.spins::after, .main .item.prize::after {
-    background-image: url(/assets/images/spin/clould-cut-2.png);
+    background-image: url(../images/spin/clould-cut-2.png);
     background-position: bottom right;
     right: -100%; }
   .main .item.spins.active::before, .main .item.prize.active::before {
@@ -144,7 +144,7 @@
         place-items: center;
         place-content: center; }
         .main .item.spins .content__spin-btn .btn {
-          background-image: url(/assets/images/spin/Button-spin.png);
+          background-image: url(../images/spin/Button-spin.png);
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
