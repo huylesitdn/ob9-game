@@ -1,0 +1,328 @@
+.mobile-main {
+  background-image: url(/assets/images/spin/BGminigame-01.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  max-width: 768px;
+  margin: auto; }
+  @media only screen and (max-width: 768px) {
+    .mobile-main .container {
+      max-width: 100%;
+      padding: 0 20px; } }
+  .mobile-main .my-navbar {
+    max-width: 768px;
+    margin: auto; }
+    .mobile-main .my-navbar .nav-item.dropdown .nav-link.dropdown-toggle {
+      color: #a10c04;
+      text-align: right;
+      text-transform: uppercase;
+      display: flex;
+      place-content: flex-end;
+      place-items: center;
+      background-color: #fff;
+      padding: 3px 8px;
+      width: fit-content;
+      margin-left: auto; }
+  .mobile-main .item > div {
+    display: flex;
+    place-items: flex-end; }
+  .mobile-main .item.tnc .content, .mobile-main .item.prize .content {
+    background-image: url(/assets/images/prize/BG-opacity-cut.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    border: 2px solid #fee3b8;
+    margin-bottom: 40px;
+    padding: 100px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 20px;
+    position: relative;
+    max-height: 700px; }
+    @media only screen and (max-width: 650px) {
+      .mobile-main .item.tnc .content, .mobile-main .item.prize .content {
+        margin-bottom: 80px; } }
+    @media only screen and (max-width: 475px) {
+      .mobile-main .item.tnc .content, .mobile-main .item.prize .content {
+        padding: 100px 15px 50px; } }
+    .mobile-main .item.tnc .content__header, .mobile-main .item.prize .content__header {
+      font-size: 30px;
+      color: #fee3b8;
+      text-align: center; }
+      @media only screen and (max-width: 600px) {
+        .mobile-main .item.tnc .content__header, .mobile-main .item.prize .content__header {
+          font-size: 24px; } }
+      @media only screen and (max-width: 500px) {
+        .mobile-main .item.tnc .content__header, .mobile-main .item.prize .content__header {
+          font-size: 22px; } }
+      @media only screen and (max-width: 400px) {
+        .mobile-main .item.tnc .content__header, .mobile-main .item.prize .content__header {
+          font-size: 20px; } }
+    .mobile-main .item.tnc .content__text, .mobile-main .item.prize .content__text {
+      color: #fee3b8; }
+    .mobile-main .item.tnc .content__title, .mobile-main .item.prize .content__title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -50px;
+      text-align: center; }
+      .mobile-main .item.tnc .content__title img, .mobile-main .item.prize .content__title img {
+        max-width: 250px; }
+        @media only screen and (max-width: 525px) {
+          .mobile-main .item.tnc .content__title img, .mobile-main .item.prize .content__title img {
+            max-width: 200px; } }
+    .mobile-main .item.tnc .content__prize-items, .mobile-main .item.prize .content__prize-items {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      gap: 30px; }
+      @media only screen and (max-width: 650px) {
+        .mobile-main .item.tnc .content__prize-items, .mobile-main .item.prize .content__prize-items {
+          gap: 20px; } }
+      @media only screen and (max-width: 525px) {
+        .mobile-main .item.tnc .content__prize-items, .mobile-main .item.prize .content__prize-items {
+          gap: 15px; } }
+      @media only screen and (max-width: 575px) {
+        .mobile-main .item.tnc .content__prize-items, .mobile-main .item.prize .content__prize-items {
+          width: 100%; } }
+      .mobile-main .item.tnc .content__prize-items__item, .mobile-main .item.prize .content__prize-items__item {
+        min-width: 180px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        width: 100%; }
+        .mobile-main .item.tnc .content__prize-items__item img, .mobile-main .item.prize .content__prize-items__item img {
+          max-width: 130px;
+          max-height: 130px; }
+          @media only screen and (max-width: 650px) {
+            .mobile-main .item.tnc .content__prize-items__item img, .mobile-main .item.prize .content__prize-items__item img {
+              max-width: 110px;
+              max-height: 110px; } }
+          @media only screen and (max-width: 525px) {
+            .mobile-main .item.tnc .content__prize-items__item img, .mobile-main .item.prize .content__prize-items__item img {
+              max-width: 100px;
+              max-height: 100px; } }
+          @media only screen and (max-width: 475px) {
+            .mobile-main .item.tnc .content__prize-items__item img, .mobile-main .item.prize .content__prize-items__item img {
+              max-width: 90px;
+              max-height: 90px; } }
+          @media only screen and (max-width: 475px) {
+            .mobile-main .item.tnc .content__prize-items__item img, .mobile-main .item.prize .content__prize-items__item img {
+              max-width: 80px;
+              max-height: 80px; } }
+          @media only screen and (max-width: 360px) {
+            .mobile-main .item.tnc .content__prize-items__item img, .mobile-main .item.prize .content__prize-items__item img {
+              max-width: 70px;
+              max-height: 70px; } }
+        .mobile-main .item.tnc .content__prize-items__item.iphone img, .mobile-main .item.prize .content__prize-items__item.iphone img {
+          max-width: 230px;
+          margin-top: -50px; }
+        @media only screen and (max-width: 650px) {
+          .mobile-main .item.tnc .content__prize-items__item, .mobile-main .item.prize .content__prize-items__item {
+            min-width: 150px; } }
+        @media only screen and (max-width: 525px) {
+          .mobile-main .item.tnc .content__prize-items__item, .mobile-main .item.prize .content__prize-items__item {
+            min-width: 130px; } }
+        @media only screen and (max-width: 475px) {
+          .mobile-main .item.tnc .content__prize-items__item, .mobile-main .item.prize .content__prize-items__item {
+            min-width: 100px; } }
+        @media only screen and (max-width: 475px) {
+          .mobile-main .item.tnc .content__prize-items__item, .mobile-main .item.prize .content__prize-items__item {
+            min-width: 80px; } }
+  .mobile-main .item.tnc .content {
+    max-height: 600px;
+    padding-bottom: 20px; }
+    @media only screen and (max-width: 650px) {
+      .mobile-main .item.tnc .content {
+        margin-bottom: 20px;
+        padding: 100px 15px 50px; } }
+    @media only screen and (max-width: 475px) {
+      .mobile-main .item.tnc .content {
+        padding: 80px 15px 30px;
+        max-height: 500px; } }
+    .mobile-main .item.tnc .content__tnc {
+      overflow: auto;
+      color: #fee3b8;
+      text-align: left; }
+      .mobile-main .item.tnc .content__tnc::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5; }
+      .mobile-main .item.tnc .content__tnc::-webkit-scrollbar {
+        width: 6px;
+        background-color: transparent; }
+      .mobile-main .item.tnc .content__tnc::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #D62929; }
+      .mobile-main .item.tnc .content__tnc__subtitle {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 15px; }
+        @media only screen and (max-width: 600px) {
+          .mobile-main .item.tnc .content__tnc__subtitle {
+            font-size: 15px; } }
+      .mobile-main .item.tnc .content__tnc__description {
+        font-size: 14px;
+        margin-bottom: 15px; }
+        @media only screen and (max-width: 600px) {
+          .mobile-main .item.tnc .content__tnc__description {
+            font-size: 12px; } }
+  .mobile-main .item.spins::before, .mobile-main .item.spins::after, .mobile-main .item.prize::before, .mobile-main .item.prize::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 50%;
+    height: 300px;
+    transition: all 0.5s;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: bottom left;
+    background-attachment: fixed;
+    transition: all 1s; }
+    @media only screen and (max-width: 1400px) {
+      .mobile-main .item.spins::before, .mobile-main .item.spins::after, .mobile-main .item.prize::before, .mobile-main .item.prize::after {
+        max-width: 40%;
+        height: 250px;
+        background-size: contain;
+        background-attachment: scroll; } }
+    @media only screen and (max-width: 1023px) {
+      .mobile-main .item.spins::before, .mobile-main .item.spins::after, .mobile-main .item.prize::before, .mobile-main .item.prize::after {
+        max-width: 40%;
+        height: 200px; } }
+    @media only screen and (max-width: 768px) {
+      .mobile-main .item.spins::before, .mobile-main .item.spins::after, .mobile-main .item.prize::before, .mobile-main .item.prize::after {
+        max-width: 40%;
+        height: 100px; } }
+  .mobile-main .item.spins::before, .mobile-main .item.prize::before {
+    background-image: url(/assets/images/spin/clould-cut-1.png);
+    left: -100%;
+    z-index: 3; }
+  .mobile-main .item.spins::after, .mobile-main .item.prize::after {
+    background-image: url(/assets/images/spin/clould-cut-2.png);
+    background-position: bottom right;
+    right: -100%; }
+  .mobile-main .item.spins.active::before, .mobile-main .item.prize.active::before {
+    left: 0; }
+  .mobile-main .item.spins.active::after, .mobile-main .item.prize.active::after {
+    right: 0; }
+  .mobile-main .item.spins {
+    position: relative; }
+    .mobile-main .item.spins .content {
+      display: flex;
+      place-content: flex-end;
+      place-items: center;
+      flex-direction: column;
+      gap: 15px;
+      padding-bottom: 70px;
+      position: relative; }
+      @media only screen and (max-width: 700px) {
+        .mobile-main .item.spins .content {
+          padding-bottom: 100px; } }
+      @media only screen and (max-width: 600px) {
+        .mobile-main .item.spins .content {
+          padding-bottom: 150px; } }
+      .mobile-main .item.spins .content__spin-btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 70px;
+        right: 0;
+        display: flex;
+        place-items: center;
+        place-content: center; }
+        @media only screen and (max-width: 700px) {
+          .mobile-main .item.spins .content__spin-btn {
+            bottom: 100px; } }
+        @media only screen and (max-width: 600px) {
+          .mobile-main .item.spins .content__spin-btn {
+            bottom: 150px; } }
+        .mobile-main .item.spins .content__spin-btn .btn {
+          background-image: url(/assets/images/spin/Button-spin.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 200px;
+          height: 200px;
+          font-size: 26px;
+          color: #fee3b8;
+          font-weight: bold;
+          font-family: monospace;
+          line-height: 28px; }
+          .mobile-main .item.spins .content__spin-btn .btn:hover {
+            opacity: 0.7; }
+          .mobile-main .item.spins .content__spin-btn .btn:focus {
+            box-shadow: none !important; }
+          @media only screen and (max-width: 600px) {
+            .mobile-main .item.spins .content__spin-btn .btn {
+              width: 150px;
+              height: 150px;
+              font-size: 22px; } }
+          @media only screen and (max-width: 475px) {
+            .mobile-main .item.spins .content__spin-btn .btn {
+              width: 150px;
+              height: 150px;
+              font-size: 20px; } }
+      .mobile-main .item.spins .content__spin-items {
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        gap: 15px; }
+        @media only screen and (max-width: 600px) {
+          .mobile-main .item.spins .content__spin-items {
+            width: 100%; } }
+        .mobile-main .item.spins .content__spin-items__item {
+          background-color: #fee3b8;
+          border-radius: 15px;
+          border-bottom: 7px solid #e5b268;
+          min-width: 120px;
+          min-height: 120px;
+          width: 120px;
+          display: flex;
+          place-content: center;
+          place-items: center;
+          padding: 10px 20px 5px; }
+          .mobile-main .item.spins .content__spin-items__item.empty {
+            background: transparent;
+            border-bottom: none;
+            z-index: -1; }
+          .mobile-main .item.spins .content__spin-items__item img {
+            max-width: 100px;
+            max-height: 100px;
+            width: 100%; }
+            @media only screen and (max-width: 700px) {
+              .mobile-main .item.spins .content__spin-items__item img {
+                min-width: 80px;
+                min-height: 80px; } }
+            @media only screen and (max-width: 600px) {
+              .mobile-main .item.spins .content__spin-items__item img {
+                min-width: 50px;
+                min-height: 50px;
+                width: 80px;
+                height: 80px;
+                object-fit: contain; } }
+            @media only screen and (max-width: 475px) {
+              .mobile-main .item.spins .content__spin-items__item img {
+                width: 60px;
+                height: 60px; } }
+          @media only screen and (max-width: 600px) {
+            .mobile-main .item.spins .content__spin-items__item {
+              min-width: 100px;
+              min-height: 80px;
+              padding: 15px 20px 10px; } }
+          @media only screen and (max-width: 475px) {
+            .mobile-main .item.spins .content__spin-items__item {
+              min-width: 80px;
+              min-height: 60px;
+              padding: 10px 20px 5px; } }
+          @media only screen and (max-width: 390px) {
+            .mobile-main .item.spins .content__spin-items__item {
+              min-width: 60px;
+              min-height: 50px;
+              padding: 5px 10px 2px; } }

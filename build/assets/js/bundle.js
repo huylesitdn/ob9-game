@@ -50,30 +50,6 @@ $(".my-navbar .chooseLanguage").on("click", function (e) {
   }
 });
 
-// if (selectLanguageModalElm.length > 0) {
-//   var selectLanguageModal = new bootstrap.Modal(selectLanguageModalElm, {});
-// }
-// $(".choose-language").on("click", function (e) {
-//   const select_language = $(this).data("language");
-//   const select_region = $(this).data("region");
-//   const accept_languages = ['Malaysia', 'Singapore']
-
-//   if (!accept_languages.includes(select_region)) {
-//     window.location.href = '/access-denied.html';
-//     return false;
-//   }
-
-//   if (LANGUAGES[select_language]) {
-//     translator.translatePageTo(LANGUAGES[select_language]);
-//     selectLanguageModal.hide();
-//     $("#mySidenav").removeClass("active");
-//     localStorage.setItem(PREFERED_REGION, select_region)
-//     window.location.reload();
-//   } else {
-//     console.log("No language setup");
-//   }
-// });
-
 /**
  * MENU SLIDE
  *

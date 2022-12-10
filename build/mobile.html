@@ -26,22 +26,168 @@
   <body>
     
     <!-- Content -->
-    <section class="main home">
-      <section class="main home">
-        <div id="fullPage">
-          <section class="item">
-              <h2>1</h2>
-          </section>
-          <section class="item">
-            <!-- content here -->
-            <h2>2</h2>
-          </section>
-          <section class="item">
-              <!-- content here -->
-              <h2>3</h2>
-          </section>
+    <section class="mobile-main">
+      <nav class="navbar fixed-top my-navbar">
+        <div class="container">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle currentLanguage btn btn-default"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item chooseLanguage" href="#" data-language="EN">EN</a></li>
+                <li><a class="dropdown-item chooseLanguage" href="#" data-language="ZH">ZH</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </section>
+      </nav>
+      <div id="fullPage">
+        <section class="item spins">
+          <div class="container content">
+            <div class="content__spin-btn">
+              <button class="btn">
+                <div>2</div>
+                <div>SPINS</div>
+              </button>
+            </div>
+            <div class="content__spin-items">
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/8.png" alt="" />
+              </div>
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/18.png" alt="" />
+              </div>
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/28.png" alt="" />
+              </div>
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/38.png" alt="" />
+              </div>
+            </div>
+            <div class="content__spin-items">
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/88.png" alt="" />
+              </div>
+              <div class="content__spin-items__item empty"></div>
+              <div class="content__spin-items__item empty"></div>
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/188.png" alt="" />
+              </div>
+            </div>
+            <div class="content__spin-items">
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/388.png" alt="" />
+              </div>
+              <div class="content__spin-items__item empty"></div>
+              <div class="content__spin-items__item empty"></div>
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/8.png" alt="" />
+              </div>
+            </div>
+            <div class="content__spin-items">
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/18.png" alt="" />
+              </div>
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/28.png" alt="" />
+              </div>
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/38.png" alt="" />
+              </div>
+              <div class="content__spin-items__item">
+                <img src="/assets/images/spin/iphone.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="item prize">
+          <div class="container">
+            <div class="content">
+              <div class="content__title" data-i18n="prize_title"></div>
+              <div class="content__prize-items">
+                <div class="content__prize-items__item">
+                  <img src="/assets/images/prize/P8.png" alt="" />
+                </div>
+                <div class="content__prize-items__item iphone">
+                  <img src="/assets/images/prize/Piphone.png" alt="" />
+                </div>
+                <div class="content__prize-items__item">
+                  <img src="/assets/images/prize/P18.png" alt="" />
+                </div>
+              </div>
+              <div class="content__prize-items">
+                <div class="content__prize-items__item">
+                  <img src="/assets/images/prize/P28.png" alt="" />
+                </div>
+                <div class="content__prize-items__item">
+                  <img src="/assets/images/prize/P38.png" alt="" />
+                </div>
+                <div class="content__prize-items__item">
+                  <img src="/assets/images/prize/P88.png" alt="" />
+                </div>
+              </div>
+              <div class="content__prize-items">
+                <div class="content__prize-items__item">
+                  <img src="/assets/images/prize/P188.png" alt="" />
+                </div>
+                <div class="content__prize-items__item">
+                  <img src="/assets/images/prize/P388.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="item tnc">
+          <div class="container">
+            <div class="content">
+              <div class="content__title" data-i18n="tnc_title"></div>
+              <div class="content__header" data-i18n="tnc.header"></div>
+              <div class="content__tnc">
+                <div
+                  class="content__tnc__description"
+                  data-i18n="tnc.text"
+                ></div>
+                <div
+                  class="content__tnc__subtitle"
+                  data-i18n="tnc.title1"
+                ></div>
+                <div
+                  class="content__tnc__description"
+                  data-i18n="tnc.text1"
+                ></div>
+                <div
+                  class="content__tnc__subtitle"
+                  data-i18n="tnc.title2"
+                ></div>
+                <div class="content__tnc__description">
+                  <ul>
+                    <li data-i18n="tnc.text21"></li>
+                    <li data-i18n="tnc.text22"></li>
+                    <li>
+                      <div data-i18n="tnc.text23"></div>
+                      <div data-i18n="tnc.text231"></div>
+                      <div data-i18n="tnc.text232"></div>
+                      <div data-i18n="tnc.text233"></div>
+                    </li>
+                    <li data-i18n="tnc.text24"></li>
+                    <li data-i18n="tnc.text25"></li>
+                    <li data-i18n="tnc.text26"></li>
+                    <li data-i18n="tnc.text27"></li>
+                    <li data-i18n="tnc.text28"></li>
+                    <li data-i18n="tnc.text29"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </section>
     
     <!-- SCRIPT -->

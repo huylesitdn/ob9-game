@@ -1,0 +1,468 @@
+.mobile-main {
+  background-image: url(/assets/images/spin/BGminigame-01.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  max-width: 768px;
+  margin: auto;
+
+  .container {
+    @media only screen and (max-width: 768px) {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  .my-navbar {
+    max-width: 768px;
+    margin: auto;
+
+    .nav-item {
+      &.dropdown {
+        .nav-link {
+          &.dropdown-toggle {
+            // color: #fee3b8;
+            color: #a10c04;
+            text-align: right;
+            text-transform: uppercase;
+            display: flex;
+            place-content: flex-end;
+            place-items: center;
+            background-color: #fff;
+            padding: 3px 8px;
+            width: fit-content;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .item {
+    &>div {
+      display: flex;
+      place-items: flex-end;
+    }
+
+    &.tnc,
+    &.prize {
+      .content {
+        background-image: url(/assets/images/prize/BG-opacity-cut.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        border: 2px solid #fee3b8;
+        margin-bottom: 40px;
+        padding: 100px 30px 50px;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        gap: 20px;
+        position: relative;
+        max-height: 700px;
+
+        @media only screen and (max-width: 650px) {
+          margin-bottom: 80px;
+        }
+
+        @media only screen and (max-width: 475px) {
+          padding: 100px 15px 50px;
+        }
+
+        &__header {
+          font-size: 30px;
+          color: #fee3b8;
+          text-align: center;
+
+          @media only screen and (max-width: 600px) {
+            font-size: 24px;
+          }
+
+          @media only screen and (max-width: 500px) {
+            font-size: 22px;
+          }
+
+          @media only screen and (max-width: 400px) {
+            font-size: 20px;
+          }
+        }
+
+        &__text {
+          color: #fee3b8;
+        }
+
+        &__title {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -50px;
+          text-align: center;
+
+          img {
+            max-width: 250px;
+
+            @media only screen and (max-width: 525px) {
+              max-width: 200px;
+            }
+          }
+        }
+
+        &__prize-items {
+          display: flex;
+          place-content: center;
+          place-items: center;
+          gap: 30px;
+
+          @media only screen and (max-width: 650px) {
+            gap: 20px;
+          }
+
+          @media only screen and (max-width: 525px) {
+            gap: 15px;
+          }
+
+          @media only screen and (max-width: 575px) {
+            width: 100%;
+          }
+
+          &__item {
+            min-width: 180px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            width: 100%;
+
+            img {
+              max-width: 130px;
+              max-height: 130px;
+
+              @media only screen and (max-width: 650px) {
+                max-width: 110px;
+                max-height: 110px;
+              }
+
+              @media only screen and (max-width: 525px) {
+                max-width: 100px;
+                max-height: 100px;
+              }
+
+              @media only screen and (max-width: 475px) {
+                max-width: 90px;
+                max-height: 90px;
+              }
+
+              @media only screen and (max-width: 475px) {
+                max-width: 80px;
+                max-height: 80px;
+              }
+
+              @media only screen and (max-width: 360px) {
+                max-width: 70px;
+                max-height: 70px;
+              }
+            }
+
+            &.iphone {
+              img {
+                max-width: 230px;
+                margin-top: -50px;
+              }
+            }
+
+            @media only screen and (max-width: 650px) {
+              min-width: 150px;
+            }
+
+            @media only screen and (max-width: 525px) {
+              min-width: 130px;
+            }
+
+            @media only screen and (max-width: 475px) {
+              min-width: 100px;
+            }
+
+            @media only screen and (max-width: 475px) {
+              min-width: 80px;
+            }
+          }
+        }
+      }
+    }
+
+    &.prize {
+      .content {
+        @media only screen and (max-width: 650px) {}
+      }
+    }
+
+    &.tnc {
+      .content {
+        max-height: 600px;
+
+        @media only screen and (max-width: 650px) {
+          margin-bottom: 20px;
+          padding: 100px 15px 50px;
+        }
+
+        @media only screen and (max-width: 475px) {
+          padding: 80px 15px 30px;
+          max-height: 500px;
+        }
+
+        padding-bottom: 20px;
+
+        &__tnc {
+          overflow: auto;
+          color: #fee3b8;
+          text-align: left;
+
+          &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #F5F5F5;
+          }
+
+          &::-webkit-scrollbar {
+            width: 6px;
+            background-color: transparent;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            background-color: #D62929;
+          }
+
+          &__subtitle {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+
+            @media only screen and (max-width: 600px) {
+              font-size: 15px;
+            }
+          }
+
+          &__description {
+            font-size: 14px;
+            margin-bottom: 15px;
+
+            @media only screen and (max-width: 600px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    &.spins,
+    &.prize {
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-width: 50%;
+        height: 300px;
+        transition: all 0.5s;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: bottom left;
+        background-attachment: fixed;
+        transition: all 1s;
+
+        @media only screen and (max-width: 1400px) {
+          max-width: 40%;
+          height: 250px;
+          background-size: contain;
+          background-attachment: scroll;
+        }
+
+        @media only screen and (max-width: 1023px) {
+          max-width: 40%;
+          height: 200px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: 40%;
+          height: 100px;
+        }
+      }
+
+      &::before {
+        background-image: url(/assets/images/spin/clould-cut-1.png);
+        left: -100%;
+        z-index: 3;
+      }
+
+      &::after {
+        background-image: url(/assets/images/spin/clould-cut-2.png);
+        background-position: bottom right;
+        right: -100%;
+      }
+
+      &.active {
+        &::before {
+          left: 0;
+        }
+
+        &::after {
+          right: 0;
+        }
+      }
+    }
+
+    &.spins {
+      position: relative;
+
+      .content {
+        display: flex;
+        place-content: flex-end;
+        place-items: center;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 70px;
+        position: relative;
+
+        @media only screen and (max-width: 700px) {
+          padding-bottom: 100px;
+        }
+
+        @media only screen and (max-width: 600px) {
+          padding-bottom: 150px;
+        }
+
+        &__spin-btn {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 70px;
+          right: 0;
+          display: flex;
+          place-items: center;
+          place-content: center;
+
+          @media only screen and (max-width: 700px) {
+            bottom: 100px;
+          }
+
+          @media only screen and (max-width: 600px) {
+            bottom: 150px;
+          }
+
+          .btn {
+            background-image: url(/assets/images/spin/Button-spin.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            font-size: 26px;
+            color: #fee3b8;
+            font-weight: bold;
+            font-family: monospace;
+            line-height: 28px;
+
+            &:hover {
+              opacity: 0.7;
+            }
+
+            &:focus {
+              box-shadow: none !important;
+            }
+
+            @media only screen and (max-width: 600px) {
+              width: 150px;
+              height: 150px;
+              font-size: 22px;
+            }
+
+            @media only screen and (max-width: 475px) {
+              width: 150px;
+              height: 150px;
+              font-size: 20px;
+            }
+          }
+        }
+
+        &__spin-items {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          gap: 15px;
+
+          @media only screen and (max-width: 600px) {
+            width: 100%;
+          }
+
+          &__item {
+            background-color: #fee3b8;
+            border-radius: 15px;
+            border-bottom: 7px solid #e5b268;
+            min-width: 120px;
+            min-height: 120px;
+            width: 120px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            padding: 10px 20px 5px;
+
+            &.empty {
+              background: transparent;
+              border-bottom: none;
+              z-index: -1;
+            }
+
+            img {
+              max-width: 100px;
+              max-height: 100px;
+              width: 100%;
+
+              @media only screen and (max-width: 700px) {
+                min-width: 80px;
+                min-height: 80px;
+              }
+
+              @media only screen and (max-width: 600px) {
+                min-width: 50px;
+                min-height: 50px;
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
+              }
+
+              @media only screen and (max-width: 475px) {
+                width: 60px;
+                height: 60px;
+              }
+            }
+
+            @media only screen and (max-width: 600px) {
+              min-width: 100px;
+              min-height: 80px;
+              padding: 15px 20px 10px;
+            }
+
+            @media only screen and (max-width: 475px) {
+              min-width: 80px;
+              min-height: 60px;
+              padding: 10px 20px 5px;
+            }
+
+            @media only screen and (max-width: 390px) {
+              min-width: 60px;
+              min-height: 50px;
+              padding: 5px 10px 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

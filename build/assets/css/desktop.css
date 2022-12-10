@@ -14,7 +14,9 @@
     place-content: flex-end;
     place-items: center;
     background-color: #fff;
-    padding: 3px 8px; }
+    padding: 3px 8px;
+    width: fit-content;
+    margin-left: auto; }
   .main .item > div {
     display: flex;
     place-items: flex-end; }
