@@ -6,15 +6,21 @@
   background-size: cover;
   position: relative;
   min-width: 768px;
+
   .my-navbar {
     .nav-item {
       &.dropdown {
         .nav-link {
           &.dropdown-toggle {
             // color: #fee3b8;
-            color: #fff;
+            color: #a10c04;
             text-align: right;
             text-transform: uppercase;
+            display: flex;
+            place-content: flex-end;
+            place-items: center;
+            background-color: #fff;
+            padding: 3px 8px;
           }
         }
       }
@@ -100,6 +106,7 @@
     &.tnc {
       .content {
         padding-bottom: 20px;
+
         &__tnc {
           overflow: auto;
           color: #fee3b8;

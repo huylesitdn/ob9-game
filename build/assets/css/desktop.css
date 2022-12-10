@@ -7,9 +7,14 @@
   position: relative;
   min-width: 768px; }
   .main .my-navbar .nav-item.dropdown .nav-link.dropdown-toggle {
-    color: #fff;
+    color: #a10c04;
     text-align: right;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    display: flex;
+    place-content: flex-end;
+    place-items: center;
+    background-color: #fff;
+    padding: 3px 8px; }
   .main .item > div {
     display: flex;
     place-items: flex-end; }
